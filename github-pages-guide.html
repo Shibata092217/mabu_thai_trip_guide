@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GitHub Pages 公開手順</title>
+    <style>
+      :root {
+        font-family: "Yu Gothic", "Hiragino Sans", "Noto Sans JP", sans-serif;
+        color: #223043;
+        background: #f5f7fb;
+      }
+
+      * { box-sizing: border-box; }
+      body { margin: 0; padding: 24px; background: linear-gradient(135deg, #eef4ff, #f7f3ff); }
+      .container { max-width: 900px; margin: 0 auto; }
+      .hero { background: white; border-radius: 20px; padding: 24px; box-shadow: 0 10px 24px rgba(34, 48, 67, 0.08); margin-bottom: 20px; }
+      h1 { margin-top: 0; margin-bottom: 8px; font-size: 2rem; }
+      .step { background: white; border-radius: 16px; padding: 20px; margin-bottom: 16px; box-shadow: 0 8px 20px rgba(34, 48, 67, 0.06); }
+      .step-header { display: flex; align-items: center; gap: 10px; margin-bottom: 8px; }
+      .step-number { display: inline-flex; align-items: center; justify-content: center; width: 36px; height: 36px; border-radius: 50%; background: #3b82f6; color: white; font-weight: bold; }
+      .screen { margin-top: 12px; padding: 12px; background: #f8fafc; border: 1px solid #e5e7eb; border-radius: 12px; }
+      svg { width: 100%; height: auto; display: block; }
+      .back-link { display: inline-block; margin-top: 8px; color: #2563eb; text-decoration: none; font-weight: bold; }
+      .back-link:hover { text-decoration: underline; }
+    </style>
+  </head>
+  <body>
+    <main class="container">
+      <section class="hero">
+        <h1>GitHub Pagesの公開手順</h1>
+        <p>このページでは、GitHub Pages で自分のサイトを公開する手順を 1 から順番に説明します。</p>
+        <a class="back-link" href="index.html">← しおりページに戻る</a>
+      </section>
+
+      <section class="step">
+        <div class="step-header"><span class="step-number">1</span><h2>GitHub にログインする</h2></div>
+        <p>GitHub のサイトにログインし、右上の「+」から「New repository」を選びます。</p>
+        <div class="screen">
+          <svg viewBox="0 0 600 220" role="img" aria-label="GitHubの画面イメージ">
+            <rect x="20" y="20" width="560" height="180" rx="14" fill="#ffffff" stroke="#d0d7de" />
+            <rect x="40" y="40" width="140" height="18" rx="6" fill="#24292f" />
+            <rect x="440" y="40" width="110" height="28" rx="8" fill="#2f81f7" />
+            <rect x="40" y="80" width="220" height="16" rx="6" fill="#d0d7de" />
+            <rect x="40" y="110" width="160" height="16" rx="6" fill="#d0d7de" />
+            <rect x="40" y="145" width="180" height="24" rx="8" fill="#f6f8fa" stroke="#d0d7de" />
+            <text x="60" y="161" fill="#57606a" font-size="14">New repository</text>
+          </svg>
+        </div>
+      </section>
+
+      <section class="step">
+        <div class="step-header"><span class="step-number">2</span><h2>リポジトリ名を決める</h2></div>
+        <p>名前は「yourname.github.io」のようにすると、個人サイトとして使いやすいです。</p>
+        <div class="screen">
+          <svg viewBox="0 0 600 220" role="img" aria-label="リポジトリ作成画面イメージ">
+            <rect x="20" y="20" width="560" height="180" rx="14" fill="#ffffff" stroke="#d0d7de" />
+            <rect x="40" y="40" width="220" height="20" rx="6" fill="#d0d7de" />
+            <rect x="40" y="75" width="260" height="18" rx="6" fill="#d0d7de" />
+            <rect x="40" y="112" width="180" height="26" rx="8" fill="#f6f8fa" stroke="#d0d7de" />
+            <text x="60" y="129" fill="#57606a" font-size="14">yourname.github.io</text>
+            <rect x="40" y="155" width="120" height="28" rx="8" fill="#2f81f7" />
+            <text x="58" y="173" fill="#ffffff" font-size="14">Create repository</text>
+          </svg>
+        </div>
+      </section>
+
+      <section class="step">
+        <div class="step-header"><span class="step-number">3</span><h2>HTML ファイルをアップロードする</h2></div>
+        <p>作成したリポジトリに、index.html と style.css をアップロードします。</p>
+        <div class="screen">
+          <svg viewBox="0 0 600 220" role="img" aria-label="ファイルアップロード画面イメージ">
+            <rect x="20" y="20" width="560" height="180" rx="14" fill="#ffffff" stroke="#d0d7de" />
+            <rect x="40" y="40" width="140" height="20" rx="6" fill="#d0d7de" />
+            <rect x="40" y="78" width="220" height="24" rx="8" fill="#f6f8fa" stroke="#d0d7de" />
+            <text x="60" y="94" fill="#57606a" font-size="14">index.html</text>
+            <rect x="40" y="114" width="220" height="24" rx="8" fill="#f6f8fa" stroke="#d0d7de" />
+            <text x="60" y="130" fill="#57606a" font-size="14">style.css</text>
+            <rect x="40" y="158" width="140" height="28" rx="8" fill="#2f81f7" />
+            <text x="58" y="176" fill="#ffffff" font-size="14">Commit changes</text>
+          </svg>
+        </div>
+      </section>
+
+      <section class="step">
+        <div class="step-header"><span class="step-number">4</span><h2>Settings から Pages を開く</h2></div>
+        <p>リポジトリの「Settings」タブを開き、「Pages」を選びます。</p>
+        <div class="screen">
+          <svg viewBox="0 0 600 220" role="img" aria-label="Pages設定画面イメージ">
+            <rect x="20" y="20" width="560" height="180" rx="14" fill="#ffffff" stroke="#d0d7de" />
+            <rect x="40" y="40" width="140" height="18" rx="6" fill="#d0d7de" />
+            <rect x="40" y="70" width="100" height="18" rx="6" fill="#2f81f7" />
+            <rect x="40" y="100" width="220" height="18" rx="6" fill="#d0d7de" />
+            <rect x="40" y="130" width="160" height="24" rx="8" fill="#f6f8fa" stroke="#d0d7de" />
+            <text x="58" y="146" fill="#57606a" font-size="14">Pages</text>
+          </svg>
+        </div>
+      </section>
+
+      <section class="step">
+        <div class="step-header"><span class="step-number">5</span><h2>Source を「Deploy from a branch」にする</h2></div>
+        <p>「Source」で「Deploy from a branch」を選び、branch を main、folder を /root にします。</p>
+        <div class="screen">
+          <svg viewBox="0 0 600 220" role="img" aria-label="Pages設定のSource選択イメージ">
+            <rect x="20" y="20" width="560" height="180" rx="14" fill="#ffffff" stroke="#d0d7de" />
+            <rect x="40" y="40" width="220" height="18" rx="6" fill="#d0d7de" />
+            <rect x="40" y="72" width="180" height="26" rx="8" fill="#f6f8fa" stroke="#d0d7de" />
+            <text x="58" y="89" fill="#57606a" font-size="14">Deploy from a branch</text>
+            <rect x="40" y="114" width="140" height="24" rx="8" fill="#f6f8fa" stroke="#d0d7de" />
+            <text x="58" y="130" fill="#57606a" font-size="14">main</text>
+            <rect x="200" y="114" width="140" height="24" rx="8" fill="#f6f8fa" stroke="#d0d7de" />
+            <text x="218" y="130" fill="#57606a" font-size="14">/root</text>
+            <rect x="40" y="154" width="120" height="28" rx="8" fill="#2f81f7" />
+            <text x="58" y="172" fill="#ffffff" font-size="14">Save</text>
+          </svg>
+        </div>
+      </section>
+
+      <section class="step">
+        <div class="step-header"><span class="step-number">6</span><h2>公開完了を待つ</h2></div>
+        <p>しばらくすると「Your site is live at ...」と表示されます。URL をコピーします。</p>
+        <div class="screen">
+          <svg viewBox="0 0 600 220" role="img" aria-label="公開完了メッセージイメージ">
+            <rect x="20" y="20" width="560" height="180" rx="14" fill="#ffffff" stroke="#d0d7de" />
+            <circle cx="100" cy="100" r="34" fill="#2da44e" />
+            <path d="M78 100l17 17 29-35" stroke="#ffffff" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+            <rect x="170" y="80" width="300" height="20" rx="6" fill="#d0d7de" />
+            <rect x="170" y="112" width="260" height="18" rx="6" fill="#d0d7de" />
+          </svg>
+        </div>
+      </section>
+
+      <section class="step">
+        <div class="step-header"><span class="step-number">7</span><h2>公開URLを開く</h2></div>
+        <p>表示された URL をブラウザで開くと、サイトが見られます。</p>
+        <div class="screen">
+          <svg viewBox="0 0 600 220" role="img" aria-label="ブラウザで公開ページを開くイメージ">
+            <rect x="20" y="20" width="560" height="180" rx="14" fill="#ffffff" stroke="#d0d7de" />
+            <rect x="40" y="40" width="520" height="24" rx="8" fill="#f6f8fa" stroke="#d0d7de" />
+            <text x="56" y="56" fill="#57606a" font-size="14">https://yourname.github.io</text>
+            <rect x="40" y="86" width="180" height="16" rx="6" fill="#d0d7de" />
+            <rect x="40" y="112" width="300" height="16" rx="6" fill="#d0d7de" />
+            <rect x="40" y="138" width="220" height="16" rx="6" fill="#d0d7de" />
+          </svg>
+        </div>
+      </section>
+
+      <section class="step">
+        <div class="step-header"><span class="step-number">8</span><h2>内容を変更したいとき</h2></div>
+        <p>index.html を編集してコミットすると、すぐに反映されます。</p>
+        <div class="screen">
+          <svg viewBox="0 0 600 220" role="img" aria-label="更新と反映イメージ">
+            <rect x="20" y="20" width="560" height="180" rx="14" fill="#ffffff" stroke="#d0d7de" />
+            <rect x="40" y="50" width="220" height="18" rx="6" fill="#d0d7de" />
+            <rect x="40" y="86" width="260" height="18" rx="6" fill="#d0d7de" />
+            <rect x="40" y="122" width="140" height="28" rx="8" fill="#2f81f7" />
+            <text x="58" y="140" fill="#ffffff" font-size="14">Commit changes</text>
+          </svg>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
