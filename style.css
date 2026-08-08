@@ -123,7 +123,7 @@ h1 {
   display: block;
 }
 
-#exchange-button {
+.exchange-button {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
@@ -137,7 +137,8 @@ h1 {
   transition: all 0.2s ease;
 }
 
-#exchange-button:hover {
+.
+exchange-button:hover {
   background: #fff;
   transform: translateY(-1px);
 }
