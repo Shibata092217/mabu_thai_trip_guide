@@ -13,7 +13,7 @@
       <header class="hero">
         <div class="hero-copy">
           <p class="eyebrow">TRAVEL GUIDE / 4N 5D</p>
-          <h1>タイ バンコク旅行4泊5日<br />スケジュール</h1>
+          <h1>タイ バンコク旅行<br />4泊5日<br />スケジュール</h1>
         </div>
         <div class="hero-panel">
           <h2>Casa 17 Hotel Bangkok</h2>
@@ -32,7 +32,49 @@
         <a href="#8/24 (月)">Day 4 / 8/24 (月)</a>
         <a href="#8/25 (火)">Day 5 / 8/25 (火)</a>
       </nav>
+      <!-- 為替計算ボタン -->
+      <button id="exchange-button">
+          為替計算
+      </button>
 
+
+      <!-- 為替計算ポップアップ -->
+      <div id="exchange-modal" class="modal">
+
+        <div class="modal-content">
+
+          <span id="close-button" class="close">
+              &times;
+          </span>
+
+          <h2>タイバーツ → 日本円</h2>
+
+
+          <p id="rate-info"></p>
+          <div class="input-area">
+              <label>
+                  タイバーツ：
+                  <input
+                      type="number"
+                      id="thb-input"
+                      value="1000"
+                  >
+                  THB
+              </label>
+          </div>
+
+          <button id="calculate-button">
+              計算
+          </button>
+
+          <p>
+              日本円：
+              <span id="jpy-result">-</span>
+              円
+          </p>
+
+        </div>
+      </div>
       <div id="schedule-root"></div>
     </main>
 

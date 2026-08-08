@@ -43,7 +43,7 @@ const travelDays = [
                 links: [
                     { label: 'HP', href: 'https://www.thailandtravel.or.jp/khao-san-road/' },
                     { label: 'Googleマップ', href: 'https://www.google.com/maps/search/Khao+San+Road+Bangkok' },
-                    
+
                 ]
             },
             {
@@ -241,3 +241,132 @@ const travelDays = [
     }
 
     renderSchedule();
+    
+    const API_URL = "https://api.frankfurter.dev/v2/rate/THB/JPY";
+
+    let exchangeRate = null;
+
+
+    /**
+     * 為替レートを取得
+     */
+    async function getExchangeRate() {
+
+        try {
+            const response = await fetch(API_URL);
+
+            if (!response.ok) {
+                throw new Error(`HTTP Error: ${response.status}`);
+            }
+
+            const data = await response.json();
+
+            console.log("為替レート:", data);
+
+            exchangeRate = data.rate;
+
+            // ポップアップにレートを表示
+            document.getElementById("rate-info").textContent =
+                `1 THB = ${exchangeRate.toFixed(2)} 円`;
+
+        } catch (error) {
+
+            console.error(
+                "為替レートの取得に失敗しました",
+                error
+            );
+
+            document.getElementById("rate-info").textContent =
+                "為替レートを取得できませんでした";
+        }
+    }
+
+
+    /**
+     * THB → JPYに換算
+     */
+    function calculateExchange() {
+
+        // 為替レートがまだ取得できていない場合
+        if (exchangeRate === null) {
+
+            document.getElementById("jpy-result").textContent =
+                "レート取得中です";
+
+            return;
+        }
+
+        // 入力されたタイバーツ
+        const thb = Number(
+            document.getElementById("thb-input").value
+        );
+
+        // 入力チェック
+        if (isNaN(thb) || thb < 0) {
+
+            document.getElementById("jpy-result").textContent =
+                "-";
+
+            return;
+        }
+
+        // THB → JPY
+        const jpy = thb * exchangeRate;
+
+        // 結果を表示
+        document.getElementById("jpy-result").textContent =
+            Math.round(jpy).toLocaleString();
+    }
+
+
+    /**
+     * 為替計算ボタン
+     */
+    document
+        .getElementById("exchange-button")
+        .addEventListener("click", () => {
+
+            document.getElementById("exchange-modal").style.display =
+                "block";
+        });
+
+
+    /**
+     * ポップアップを閉じる
+     */
+    document
+        .getElementById("close-button")
+        .addEventListener("click", () => {
+
+            document.getElementById("exchange-modal").style.display =
+                "none";
+        });
+
+
+    /**
+     * 計算ボタン
+     */
+    document
+        .getElementById("calculate-button")
+        .addEventListener("click", calculateExchange);
+
+
+    /**
+     * ポップアップ外をクリックしたら閉じる
+     */
+    window.addEventListener("click", (event) => {
+
+        const modal =
+            document.getElementById("exchange-modal");
+
+        if (event.target === modal) {
+
+            modal.style.display = "none";
+        }
+    });
+
+
+    /**
+     * ページ読み込み時に為替レートを取得
+     */
+    getExchangeRate();
