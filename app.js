@@ -12,7 +12,7 @@ const travelDays = [
                     { label: '集合時間', value: '07:00' },
                     { label: 'メモ', note: '14:00 ドムアン空港着予定' }
                 ],
-                links: [{ label: 'Googleマップ', href: 'https://maps.app.goo.gl/KziNkVY2Zd7PpNzz7' }]
+                links: [{ label: 'Googleマップ', href: 'https://www.google.com/maps/place/%E3%80%92282-0004+%E5%8D%83%E8%91%89%E7%9C%8C%E6%88%90%E7%94%B0%E5%B8%82%E5%8F%A4%E8%BE%BC%E5%AD%97%E5%8F%A4%E8%BE%BC1-1+%E7%AC%AC2%E3%82%BF%E3%83%BC%E3%83%9F%E3%83%8A%E3%83%AB/@35.7724143,140.3861054,1175m/data=!3m2!1e3!4b1!4m6!3m5!1s0x6022f39d813b23e3:0x7494da9b8c564b0!8m2!3d35.7724143!4d140.3886803!16s%2Fg%2F12hvd0yzx?entry=ttu&g_ep=EgoyMDI2MDgwNS4xIKXMDSoASAFQAw%3D%3D' }]
             },
             {
                 label: 'Spot',
@@ -56,7 +56,7 @@ const travelDays = [
                 ],
                 links: [
                     { label: 'HP', href: 'https://runbkk.net/choo-choo-hemp-bangkok/' },
-                    { label: 'Googleマップ', href: 'https://maps.app.goo.gl/XH4jE2FirwGqWM3D9' }
+                    { label: 'Googleマップ', href: 'https://www.google.com/maps/place/%E3%83%81%E3%83%A5%E3%83%BC+%E3%83%81%E3%83%A5%E3%83%BC+%E3%83%98%E3%83%B3%E3%83%97+%E3%82%A6%E3%82%A3%E3%83%BC%E3%83%89+%E3%82%B7%E3%83%A7%E3%83%83%E3%83%97%EF%BD%9C%E3%82%B9%E3%82%AF%E3%83%B3%E3%83%93%E3%83%83%E3%83%8849+-+%E3%83%88%E3%83%B3%E3%83%AD%E3%83%BC/@13.7345244,100.5745565,1407m/data=!3m2!1e3!4b1!4m6!3m5!1s0x30e29f3d0f67d76d:0xa9685f4113fe2ce4!8m2!3d13.7345244!4d100.5771314!16s%2Fg%2F11s96hztfl?entry=ttu&g_ep=EgoyMDI2MDgwNS4xIKXMDSoASAFQAw%3D%3D' }
                 ]
             }
         ]
@@ -241,7 +241,7 @@ const travelDays = [
     }
 
     renderSchedule();
-    
+
     const API_URL = "https://api.frankfurter.dev/v2/rate/THB/JPY";
 
     let exchangeRate = null;
