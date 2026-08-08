@@ -123,22 +123,24 @@ h1 {
   display: block;
 }
 
-.exchange-button {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  margin-bottom: 18px;
-  
-  text-decoration: none;
-  color: #2f3b45;
-  padding: 8px 12px;
-  border: 1px solid rgba(31, 37, 43, 0.08);
-  background: rgba(255, 255, 255, 0.6);
-  transition: all 0.2s ease;
+#exchange-button {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+
+    color: #2f3b45;
+    padding: 24px;
+    border: 1px solid rgba(31, 37, 43, 0.08);
+    background: rgba(255, 255, 255, 0.6);
+    transition: all 0.2s ease;
+
+    border-radius: 22px;
+    margin-bottom: 18px;
+
+    cursor: pointer;
 }
 
-.
-exchange-button:hover {
+#exchange-button:hover {
   background: #fff;
   transform: translateY(-1px);
 }
