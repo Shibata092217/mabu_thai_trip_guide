@@ -72,12 +72,12 @@ const travelDays = [
                 alt: 'Wat Arun temple in Bangkok',
                 meta: [
                     { label: '到着時刻', value: '12:00' },
-                    { label: 'メモ', note: '京都で言う清水寺' }
+                    { label: 'メモ', note: '京都で言う清水寺' },
+                    { label: '移動', note: 'Grab_車で南東に10分' }
                 ],
                 links: [
                     { label: 'HP', href: 'https://www.thailandtravel.or.jp/wat-pho/' },
-                    { label: 'Googleマップ', href: 'https://www.google.com/maps/search/Wat+Pho+Bangkok' },
-                    { label: '移動', note: 'Grab_車で南東に10分' }
+                    { label: 'Googleマップ', href: 'https://www.google.com/maps/search/Wat+Pho+Bangkok' }
                 ]
             },
             {
@@ -196,12 +196,12 @@ const travelDays = [
             alt: 'Ayutthaya Ruins',
             meta: [
                 { label: '到着時刻', value: '12:00' },
-                { label: 'メモ', note: '象乗り体験' }
+                { label: 'メモ', note: '象乗り体験' },
+                { label: '移動', note: 'Grab_車で北に1時間40分' }
             ],
             links: [
                 { label: 'HP', href: 'https://www.thailandtravel.or.jp/roman-ayutthaya-sukhothai/' },
-                { label: 'Googleマップ', href: 'https://www.google.com/maps/search/Ayutthaya+Ruins' },
-                { label: '移動', note: 'Grab_車で北に1時間40分' }
+                { label: 'Googleマップ', href: 'https://www.google.com/maps/search/Ayutthaya+Ruins' }
             ]
         },
         {
