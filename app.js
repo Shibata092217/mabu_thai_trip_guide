@@ -20,8 +20,8 @@ const travelDays = [
                 image: 'https://cf.bstatic.com/xdata/images/hotel/max1024x768/692562613.jpg?k=0b8fb6a4f40130f8b9ee7ea294255a1981a92a98378175642ac05ddc0c7d869b&o=&hp=1',
                 alt: 'Casa 17 Hotel Bangkok exterior',
                 meta: [
-                    { label: '到着時刻', value: '15:00' },
-                    { label: 'メモ', note: '空港から車で50分' }
+                        { label: '到着時刻', value: '15:00' },
+                        { label: '移動', note: 'Grab_車で南に50分' }
                 ],
                 links: [
                     {
@@ -38,7 +38,7 @@ const travelDays = [
                 alt: 'Khao San Road street food area',
                 meta: [
                     { label: '到着時刻', value: '19:00' },
-                    { label: 'メモ', note: '夜飯' }
+                    { label: '移動', note: 'Grab_車で東に10分' }
                 ],
                 links: [
                     { label: 'HP', href: 'https://www.thailandtravel.or.jp/khao-san-road/' },
@@ -47,7 +47,7 @@ const travelDays = [
                 ]
             },
             {
-                label: 'Restaurant',
+                label: 'Spot',
                 title: 'choo choo hemp',
                 image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4Be9FIqvSgiXjr9t1CSdUfyne7I9eWALD9aCQ9jSssQ&s=10',        alt: 'Khao San Road street food area',
                 meta: [
@@ -76,19 +76,62 @@ const travelDays = [
                 ],
                 links: [
                     { label: 'HP', href: 'https://www.thailandtravel.or.jp/wat-pho/' },
-                    { label: 'Googleマップ', href: 'https://www.google.com/maps/search/Wat+Pho+Bangkok' }
+                    { label: 'Googleマップ', href: 'https://www.google.com/maps/search/Wat+Pho+Bangkok' },
+                    { label: '移動', note: 'Grab_車で南東に10分' }
+                ]
+            },
+            {
+                label: 'Spot',
+                title: 'ゴアーン・カオマンガイ・プラトゥーナム',
+                image: 'https://cdn-ak.f.st-hatena.com/images/fotolife/n/nekokura/20230808/20230808181848.jpg',
+                alt: 'Wat Arun temple in Bangkok',
+                meta: [
+                    { label: '到着時刻', value: '12:00' },
+                    { label: 'メモ', note: '通称ピンクのカオマンガイ' }
+                ],
+                links: [
+                    { label: 'HP', href: 'https://www.thailandtravel.or.jp/go-ang-kaomunkai-pratunam/' },
+                    { label: 'Googleマップ', href: 'https://www.google.com/maps/search/Goaan+Kaomunkai+Pratunam' }
+                ]
+            },
+            {
+                label: 'Spot',
+                title: 'BodyCareWorks Soi18',
+                image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDnvVijw6CCxbD5toDGiTxmALF8aF9XXd7uj335zmqaQ&s=10',
+                alt: 'BodyCareWorks Soi18',
+                meta: [
+                    { label: '到着時刻', value: '17:00' },
+                    { label: 'メモ', note: '17:00~ 5名 90minコース 900thb 予約済み' }
+                ],
+                links: [
+                    { label: 'インスタグラム', href: 'https://www.instagram.com/bcw.soi18/' },
+                    { label: 'Googleマップ', href: 'https://www.google.com/maps/search/BodyCareWorks+Soi18' }
                 ]
             },
             {
                 label: 'Spot',
                 title: 'ナーナープラザ',
-                image: 'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/31/18/e8/c3/relax-and-refresh-at.jpg?w=900&h=500&s=1',
+                image: 'https://ak-d.tripcdn.com/images/1mk0k224x8w2v4em44B02.jpg?proc=source%2Ftrip',
                 alt: 'Asiatique riverside night market',
                 meta: [
-                    { label: '到着時刻', value: '16:00' },
-                    { label: 'メモ', note: '' }
+                    { label: '到着時刻', value: '19:00' },
+                    { label: '移動', note: 'Grab_車で北東に50分' }
                 ],
-                links: [{ label: 'Googleマップ', href: 'https://www.google.com/maps/search/Asiatique+Bangkok' }]
+                links: [{ label: 'Googleマップ', href: 'https://www.google.com/maps/search/ナーナープラザ' }]
+            },
+            {
+                label: 'Spot',
+                title: 'レインボー4',
+                image: 'https://www.thaich.net/wp-content/uploads/2020/09/NANA-PLAZA-4.jpg',
+                alt: 'NANA PLAZA 4',
+                meta: [
+                    { label: '到着時刻', value: '22:00' },
+                    { label: 'メモ', note: '芝田調べで人気店' }
+                ],
+                links: [
+                    { label: 'YouTube', href: 'https://www.youtube.com/watch?v=ADVs60knxyU' },
+                    { label: 'Googleマップ', href: 'https://www.google.com/maps/search/NANA+PLAZA+rainbow+4' }
+                ]
             }
         ]
     },
@@ -103,11 +146,26 @@ const travelDays = [
                 alt: 'Chatuchak Weekend Market in Bangkok',
                 meta: [
                     { label: '到着時刻', value: '13:00' },
-                    { label: 'メモ', note: '古着市場 出店' }
+                    { label: 'メモ', note: '古着市場 出店' },
+                    { label: '移動', note: 'Grab_車で北東に40分' }
                 ],
                 links: [
                     { label: 'HP', href: 'https://www.thailandtravel.or.jp/chatuchak-weekend-market/' },
                     { label: 'Googleマップ', href: 'https://www.google.com/maps/search/Chatuchak+Weekend+Market+Bangkok' }
+                ]
+            },
+            {
+                label: 'Restaurant',
+                title: 'ソンブーン シーフード スラウォン店',
+                image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTC07AZQbT7lBmbudb7k1XV1Qsmpve3TDHRqybJ1DVoYq6XEDx6KTqlCIU&s=10',
+                alt: 'Khao San Road street food area',
+                meta: [
+                    { label: '到着時刻', value: '19:00' },
+                    { label: 'メモ', note: '予約済み' }
+                ],
+                links: [
+                    { label: 'HP', href: 'https://www.somboonseafood.com/ja' },
+                    { label: 'Googleマップ', href: 'https://www.google.com/maps/search/Somboon+Seafood+Slawong' }
                 ]
             },
             {
@@ -117,7 +175,8 @@ const travelDays = [
                 alt: 'Khao San Road street food area',
                 meta: [
                     { label: '到着時刻', value: '17:00' },
-                    { label: 'メモ', note: '夜飯' }
+                    { label: 'メモ', note: '夜飯' },
+                    { label: '移動', note: 'Grab_車で南に40分' }
                 ],
                 links: [
                     { label: 'HP', href: 'https://www.thailandtravel.or.jp/khao-san-road/' },
@@ -136,12 +195,13 @@ const travelDays = [
             image: 'https://www.jtb.co.jp/kaigai_guide/report/TH/assets_c/2015/02/344_top.jpg',
             alt: 'Ayutthaya Ruins',
             meta: [
-            { label: '到着時刻', value: '12:00' },
-            { label: 'メモ', note: '象乗り体験' }
+                { label: '到着時刻', value: '12:00' },
+                { label: 'メモ', note: '象乗り体験' }
             ],
             links: [
-            { label: 'HP', href: 'https://www.thailandtravel.or.jp/roman-ayutthaya-sukhothai/' },
-            { label: 'Googleマップ', href: 'https://www.google.com/maps/search/Ayutthaya+Ruins' }
+                { label: 'HP', href: 'https://www.thailandtravel.or.jp/roman-ayutthaya-sukhothai/' },
+                { label: 'Googleマップ', href: 'https://www.google.com/maps/search/Ayutthaya+Ruins' },
+                { label: '移動', note: 'Grab_車で北に1時間40分' }
             ]
         },
         {
@@ -150,12 +210,12 @@ const travelDays = [
             image: 'https://www.thailandtravel.or.jp/wp-content/uploads/2017/03/WEB_Bangkok-Khao-San-Road-211875DK.jpg',
             alt: 'Khao San Road street food area',
             meta: [
-            { label: '到着時刻', value: '16:00' },
-            { label: 'メモ', note: '夜飯' }
+                { label: '到着時刻', value: '16:00' },
+                { label: 'メモ', note: '夜飯' }
             ],
             links: [
-            { label: 'HP', href: 'https://www.thailandtravel.or.jp/khao-san-road/' },
-            { label: 'Googleマップ', href: 'https://www.google.com/maps/search/Khao+San+Road+Bangkok' }
+                { label: 'HP', href: 'https://www.thailandtravel.or.jp/khao-san-road/' },
+                { label: 'Googleマップ', href: 'https://www.google.com/maps/search/Khao+San+Road+Bangkok' }
             ]
         }
         ]
@@ -170,12 +230,13 @@ const travelDays = [
             image: 'https://www.thailandtravel.or.jp/wp-content/uploads/2023/07/S_DON_0008.jpg',
             alt: 'Don Mueang International Airport in Bangkok',
             meta: [
-            { label: '到着時刻', value: '09:00' },
-            { label: 'メモ', note: '２時間前を目安 <br />19:45 成田空港着' }
+                { label: '到着時刻', value: '09:00' },
+                { label: 'メモ', note: '２時間前を目安 <br />19:45 成田空港着' },
+                { label: '移動', note: 'Grab_車で北に50分' }
             ],
             links: [
-            { label: 'HP', href: 'https://www.thailandtravel.or.jp/don-mueang-international-airport/' },
-            { label: 'Googleマップ', href: 'https://www.google.com/maps/search/Don+Mueang+International+Airport+Bangkok' }
+                { label: 'HP', href: 'https://www.thailandtravel.or.jp/don-mueang-international-airport/' },
+                { label: 'Googleマップ', href: 'https://www.google.com/maps/search/Don+Mueang+International+Airport+Bangkok' }
             ]
         }
         ]
