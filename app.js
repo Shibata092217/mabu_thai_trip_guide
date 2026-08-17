@@ -155,6 +155,20 @@ const travelDays = [
                 ]
             },
             {
+                label: 'shopping',
+                title: 'MBKセンター',
+                image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-xoTD34qHIkWCWTH6G8Bcu5XM-3HEPyEgle38J-7M6w&s=10',
+                alt: 'MBK Center in Bangkok',
+                meta: [
+                    { label: '到着時刻', value: '16:00' },
+                    { label: 'メモ', note: '「マーブンクロンセンター」(通称「MBK」)は、雑貨や携帯、ファッション、貴金属などが揃う大型ショッピングモール。' },
+                ],
+                links: [
+                    { label: 'HP', href: 'https://www.thailandtravel.or.jp/mbk-center-bangkok/' },
+                    { label: 'Googleマップ', href: 'https://www.google.com/maps/search/MBK+Center+Bangkok' }
+                ]
+            },
+            {
                 label: 'Restaurant',
                 title: 'ソンブーン シーフード スラウォン店',
                 image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTC07AZQbT7lBmbudb7k1XV1Qsmpve3TDHRqybJ1DVoYq6XEDx6KTqlCIU&s=10',
